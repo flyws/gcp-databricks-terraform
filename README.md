@@ -9,7 +9,7 @@ alternative way where you can automate the workspace creation with a Service Acc
 3. GCP Databricks workspace management  
 Once you have a workspace, you might want to manage it using a centralized Service Account. This is not a problem because the above Service Account will 
 then be added to the workspace as an admin, which can now manage things centrally.
-4. Individual user's Terraform usage
+4. Individual user's Terraform usage  
 The above 3 points are about how admins can centrally manage Databricks assets. However in this component we introduce how individual workspace user can 
 utilize their Databricks personal tokens to manage assets within their own permission scope.
 
