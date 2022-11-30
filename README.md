@@ -17,3 +17,6 @@ utilize their Databricks personal tokens to manage assets within their own permi
 - You must have Account API preview enabled for your GCP Databricks account. (this will not be necessary once the API goes public preview / generally available)
 - You must have enough permissions to create Service Account and assign permissions for a GCP Project.
 - You have used Terraform before and know how to authenticate with GCP Terraform provider. 
+
+# Guide
+To run this example scripts, clone the relevant folder to your environment and run `terraform init` to initialize your terraform. Do note that you will have to modify the values in `.tfvars` files so that it can be tailored to your GCP account and GCP Databricks account.
