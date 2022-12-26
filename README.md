@@ -20,3 +20,13 @@ utilize their Databricks personal tokens to manage assets within their own permi
 
 # Guide
 To run this example scripts, clone the relevant folder to your environment and run `terraform init` to initialize your terraform. Do note that you will have to modify the values in `.tfvars` files so that it can be tailored to your GCP account and GCP Databricks account.
+
+# Tips
+If you want to authenticate GCP Databricks provider with GCP Service Account, but you want to bypass the whole gcloud auth process instead (for example, some CI/CD tool might not support file type environmental variables), you could then feed the `google_credentials` field in GCP Databricks TF Provider config like below:
+
+```
+provider "databricks" {
+  host = "https://accounts.gcp.databricks.com"
+  google_credentials = file("~/your_service_account_cred.json")
+}
+```
